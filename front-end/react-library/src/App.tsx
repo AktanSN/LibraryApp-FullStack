@@ -1,11 +1,19 @@
 import React from 'react';
+import './App.css'
 
-function App() {
+import { Navbar } from './layout/NavbarAndFooter/Navbar';
+import {Footer} from './layout/NavbarAndFooter/Footer';
+import { HomePage } from './layout/HomePage/HomePage';
+
+
+export const App = () => {
   return (
-    <div className="App">
-      <h1> fdsfdsafds</h1>
-    </div>
+    <>
+      <Navbar/>
+      <HomePage/>
+      <Footer/>
+    </>
   );
 }
 
-export default App;
+
